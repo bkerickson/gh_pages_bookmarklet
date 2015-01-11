@@ -12,7 +12,7 @@ Since linking JavaScript is not allowed with Github's markdown, you have to do a
 
 
 
-<a href="https://github.com/bkerickson/gh_pages_bookmarklet#gh_pages_bookmarklet">Open in GH-Pages</a>
+<a href="https://github.com/bkerickson/gh_pages_bookmarklet#gh-pages-bookmarklet">Open in GH-Pages</a>
 
 
 ##### The Code
