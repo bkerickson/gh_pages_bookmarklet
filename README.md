@@ -1,4 +1,4 @@
-# gh_pages_bookmarklet
+# GH Pages Bookmarklet
 A bookmarklet that opens a GH pages hosted branch of a repo in a new window.
 
 How it works: Using some basic JavaScript, the script finds the username of the repo owner and repo name to build the .github.io address, and what directory it should open to (based on what directory of the repo you are looking at on GitHub). So if you are looking at the /images directory of a repo, it will open to *username.github.io/reponame/images*
@@ -12,7 +12,7 @@ Since linking JavaScript is not allowed with Github's markdown, you have to do a
 
 
 
-<a href="https://github.com/bkerickson/gh_pages_bookmarklet">Open in GH-Pages</a>
+<a href="https://github.com/bkerickson/gh_pages_bookmarklet#gh_pages_bookmarklet">Open in GH-Pages</a>
 
 
 ##### The Code
