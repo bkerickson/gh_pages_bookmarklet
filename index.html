@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GH-Pages Bookmarklet</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Source+Code+Pro' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>GH-Pages Bookmarklet</h1>
+
+    <p>A bookmarklet that opens a GH Pages hosted branch of a repo in a new window.</p>
+
+    <p>How it works: Using some basic JavaScript, the script finds the username of the repo owner and repo name to build the .github.io address, and what directory it should open to (based on what directory of the repo you are looking at on GitHub). So if you are looking at the /images directory of a repo, it will open to <i>username.github.io/reponame/images</i></p>
+
+    <p>Since this is an HTML page, you don't have to manually build the bookmarklet like when viewing the repo on GitHub. You can simply drag the link below to your bookmark bar.</p>
+
+    <p>
+      <a href="javascript:var http = 'http://';var github = '.github.io';var username = document.querySelector('.author a span').innerText;var ghPages = http + username + github + '/';var baseUrl = document.querySelectorAll('.breadcrumb [itemprop]');if(baseUrl){for(i=0, max=baseUrl.length;i<max;i++){if((username+github) != baseUrl[i].innerText){ghPages = ghPages + baseUrl[i].innerText + '/';}}};var endUrl = document.querySelectorAll('.breadcrumb .final-path');if(endUrl){for(i=0, max=endUrl.length;i<max;i++){ghPages = ghPages + endUrl[i].innerText + '/'}}window.open(ghPages);">Open in GH-Pages</a>
+    </p>
+
+    <h5>The code</h5>
+    <pre><code>javascript:var http = &#x27;http://&#x27;;var github = &#x27;.github.io&#x27;;var username = document.querySelector(&#x27;.author a span&#x27;).innerText;var ghPages = http + username + github + &#x27;/&#x27;;var baseUrl = document.querySelectorAll(&#x27;.breadcrumb [itemprop]&#x27;);if(baseUrl){for(i=0, max=baseUrl.length;i&#x3C;max;i++){if((username+github) != baseUrl[i].innerText){ghPages = ghPages + baseUrl[i].innerText + &#x27;/&#x27;;}}};var endUrl = document.querySelectorAll(&#x27;.breadcrumb .final-path&#x27;);if(endUrl){for(i=0, max=endUrl.length;i&#x3C;max;i++){ghPages = ghPages + endUrl[i].innerText + &#x27;/&#x27;}}window.open(ghPages);
+    </code></pre>
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+pre {
+  font-family: 'Source Code Pro', sans-serif;
+  background: #e2e4a9;
+  max-width: 100%;
+  overflow-y: scroll;
+  height: 200px;
+  padding: 10px;word-wrap: break-word;
+}
+code {
+  max-width: 100%;
+  color: #41360d;
+}
